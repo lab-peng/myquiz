@@ -7,4 +7,5 @@ class Quiz(models.Model):
 	option2 = models.TextField(max_length = 20)
 	option3 = models.TextField(max_length = 20)
 	option4 = models.TextField(max_length = 20)
+	option5 = models.TextField(max_length = 20, null=True)
 	answer = models.TextField(max_length = 20, null=True)
