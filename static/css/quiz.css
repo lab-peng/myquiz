@@ -1,12 +1,13 @@
 body{
-	background: darkgrey;
-	color:white;
+	background: #fafafa;
+	color: #333333;
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 }
 #container{
 	width: 60%;
-	background: #312a2a;
+	background: #ffffff;
+	color: #444444;
 	margin: 20px auto;
 	overflow: auto;
 	padding: 25px;
@@ -28,12 +29,11 @@ section{
 	min-height: 400px;
 }
 footer{
-	background: green;
 	text-align: center;
 }
 input[type = 'submit']{
-	width: 60%;
-	background: green;
+	width: auto;
+	background: #007bff;
 	border:0;
 	color: white;
 	padding: 10px 15px;
@@ -58,10 +58,13 @@ input[type = 'radio']{
     display: block;
     width: 95%;
     height: 25px;
-    background: skyblue;
+	background: #5f788a;
+	color: #cbd5db;
     padding: 20px;
     text-align: center;
     border-radius: 5px;
-    color: black;
     font-weight: bold;
 }
+.button:hover {
+    color: #ffffff;
+  }
