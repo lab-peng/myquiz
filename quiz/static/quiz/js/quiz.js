@@ -27,19 +27,18 @@ function submitAnswers(answers){
  
 
 	//validation
-	/*
-	for(i = 1; i <= total; i++){
-		if(eval('q'+i) == null || eval('q'+i) == ''){
-			alert('you missed question ' + i);
-			return false;
-		}
-	}
-	*/
+
 	for(i = 1; i <= total; i++){
 		if(choice[i] == null || choice[i] == ''){
-			alert('you missed question ' + i);
+			var warning = document.getElementById('warning');
+			warning.innerHTML = "<h3>you missed question <span>" + i + "</span></h3>"
+			// alert('you missed question ' + i);
 			return false;
 		}
+		else{
+			var warning = document.getElementById('warning');
+			warning.innerHTML = ""
+	}
 	}
 
 

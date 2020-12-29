@@ -42,6 +42,11 @@ input[type = 'submit']{
 input[type = 'radio']{
 	transform: scale(2);
 }
+
+#warning {
+	color: red;
+	text-align: center;
+}
 #results h3{
 	background: #FFFFFF;
 	color: black;
