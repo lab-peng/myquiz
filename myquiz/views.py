@@ -1,11 +1,11 @@
 from django.shortcuts import render
 
 def index(request):
-	return render(request, 'index.html')
+	return render(request, 'quiz/index.html')
 
 def questions(request):
-	return render(request, 'quiz.html')
+	return render(request, 'quiz/quiz.html')
 
 def login(request):
-	return render(request, 'login.html')
+	return render(request, 'quiz/login.html')
 
