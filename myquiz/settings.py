@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '3nh0t8dlr981qf8@jpbs+5m$%ituuv6mz&s&dornnka*qz2ao$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mocktests.pythonanywhere.com']
 
 
 # Application definition
