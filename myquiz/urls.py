@@ -1,6 +1,6 @@
 from django.conf.urls import url, include
 from django.contrib import admin
-from myquiz import views as index_views
+from quiz import views as index_views
 from rest_framework.urlpatterns import format_suffix_patterns
 from quizapi import views
 
