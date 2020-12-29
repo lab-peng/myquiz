@@ -10,17 +10,8 @@
 <body>
 	<div id = "container">
 		<header>
-			<a href="#" class = "button">Let's Get Started</a>
-			<h1>Verbal Advantage: Pretest</h1>
-			<p>Directions: Each test word is printed in CAPITAL letters in a phrase or sentence. From the five answer choices directly beneath the phrase or sentence, select the one that comes nearest to the precise meaning of the test word.</p>
-			<p>Verbal Advantage: Pretest Evaluation<br>
-				0–100: Very high vocabulary.<br>
-				75–89: Above-average vocabulary.<br>
-				60–74: Good, but could be considerably better.<br>
-				40–59: Your vocabulary should and can be stronger.<br>
-				25–39: There is ample room for improvement. Apply yourself.<br>
-				Below 25: It is essential that you improve your vocabulary.
-	      </p>
+			<a href="/" class = "button">Let's Get Started</a>
+			<h1>W3School: Basic Python Quiz</h1>
 		</header>
 
 		<section>
@@ -28,10 +19,10 @@
 			<form name = "quizForm" onsubmit = "return submitAnswers(answers = [{% for q in questions %}'{{ q.answer }}',{% endfor %}])">
 			{% for q in questions %}
 				<h3> {{ q.id }}.  {{ q.question|safe }}</h3>
-				<input type = "radio" name = "q{{ q.id }}" value = "a" id = "q1a">   a. {{ q.option1 }}<br><br>
-				<input type = "radio" name = "q{{ q.id }}" value = "b" id = "q1b">   b. {{ q.option2 }}<br><br>       
-				<input type = "radio" name = "q{{ q.id }}" value = "c" id = "q1c">   c. {{ q.option3 }}<br><br>
-				<input type = "radio" name = "q{{ q.id }}" value = "d" id = "q1d">   d. {{ q.option4 }}<br><br>
+				<input type = "radio" name = "q{{ q.id }}" value = "a" id = "q1a">   a. {{ q.option1|safe }}<br><br>
+				<input type = "radio" name = "q{{ q.id }}" value = "b" id = "q1b">   b. {{ q.option2|safe }}<br><br>       
+				<input type = "radio" name = "q{{ q.id }}" value = "c" id = "q1c">   c. {{ q.option3|safe }}<br><br>
+				<input type = "radio" name = "q{{ q.id }}" value = "d" id = "q1d">   d. {{ q.option4|safe }}<br><br>
 			
 			{% endfor %}
 
@@ -43,7 +34,7 @@
 			<div id = "results"></div>
 
 
-		<a href="/questions" class="button">Reset</a>
+		<a href="/" class="button">Reset</a>
 		</section>
 		<footer>
 			<p>&copy;2021. All rights reserved.</p>

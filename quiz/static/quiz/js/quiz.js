@@ -31,7 +31,7 @@ function submitAnswers(answers){
 	for(i = 1; i <= total; i++){
 		if(choice[i] == null || choice[i] == ''){
 			var warning = document.getElementById('warning');
-			warning.innerHTML = "<h3>you missed question <span>" + i + "</span></h3>"
+			warning.innerHTML = "<h3>You have missed question <span>" + i + "</span> or more !!!</h3>"
 			// alert('you missed question ' + i);
 			return false;
 		}

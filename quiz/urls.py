@@ -1,7 +1,10 @@
-from django.conf.urls import url
-import quiz.views as quiz_views
+# from django.conf.urls import url
+from django.urls import path
+from . import views
 
 urlpatterns = [
-	url(r'^$', quiz_views.qpage, name='quiz'),
-	
+	path('', views.qpage, name='quiz'),
+	path('index/', views.index, name='index'),
+	path('login/', views.login, name='login'),
+	path('quizapi', views.QuizApiList.as_view())
 ]
