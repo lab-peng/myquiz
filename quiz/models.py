@@ -3,9 +3,8 @@ from django.db import models
 # Create your models here.
 class Quiz(models.Model):
 	question = models.TextField(max_length = 500)
-	option1 = models.TextField(max_length = 20)
-	option2 = models.TextField(max_length = 20)
-	option3 = models.TextField(max_length = 20)
-	option4 = models.TextField(max_length = 20)
-	option5 = models.TextField(max_length = 20, null=True)
-	answer = models.TextField(max_length = 20, null=True)
+	option1 = models.TextField()
+	option2 = models.TextField()
+	option3 = models.TextField()
+	option4 = models.TextField()
+	answer = models.TextField(null=True)

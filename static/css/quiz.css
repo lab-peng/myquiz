@@ -47,6 +47,7 @@ input[type = 'radio']{
 	color: black;
 	padding:10px;
 	margin: 10px 0;
+	text-align:center;
 
 }
 #results span{
